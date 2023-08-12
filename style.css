@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(228, 76%, 89%);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 330px;
+    margin: auto;
+    height: 550px;
+    position: relative;
+}
+
+#container img{
+    width: 100%;
+    height: 35%;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+#selected-plan{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(211, 211, 211, 0.386);
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+}
+
+#selected-plan img{
+    width: 40px;
+    height: auto;
+    margin: 0;
+}
+
+#plan-type{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: 0.8rem;
+}
+
+#smaller-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+#description{
+    width: 90%;
+    text-align: center;
+    opacity: 60%;
+}
+
+
+#container a{
+    color: blue;
+    font-weight: 700;
+    position: absolute;
+    right : 40px;
+}
+
+#plan-title{
+    font-weight: 900;
+}
+
+#price{
+    opacity: 60%;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#blue-button{
+    background-color: rgb(70, 70, 235);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#white-button{
+    background-color: white;
+    opacity: 60%;
+}
+
+@media (min-width: 500px){
+    #container{
+        max-width: 450px;
+    }
+}
